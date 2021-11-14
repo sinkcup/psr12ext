@@ -40,8 +40,13 @@ This file can include the list of rule you want to disable as well as your custo
         <exclude name="Generic.Files.LineEndings" />
         <!-- Disables strict type requirement -->
         <exclude name="SlevomatCodingStandard.TypeHints.DeclareStrictTypes" />
-        <!-- Ignores missing parentheses in class instantination -->
+        <!-- Ignores missing parentheses in class instantiation -->
         <exclude name="PSR12.Classes.ClassInstantiation.MissingParentheses" />
+    </rule>
+
+    <!-- Disables `AbstractOrFinal` for Symfony entities -->
+    <rule ref="AbstractOrFinalClassesOnly.AbstractOrFinal">
+        <exclude-pattern>src/Entity/*</exclude-pattern>
     </rule>
 
     <!-- Rules for tests -->
@@ -58,7 +63,7 @@ This file can include the list of rule you want to disable as well as your custo
 The List Of Rules Used In This Coding Standard
 ----------------------------------------------
 
-All used rules with their options are describled in [PSR12Ext/ruleset.xml](PSR12Ext/ruleset.xml).
+All used rules with their options are described in [PSR12Ext/ruleset.xml](PSR12Ext/ruleset.xml).
 
 Below you can find only the name of the rules:
 

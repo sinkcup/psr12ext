@@ -3,7 +3,10 @@
     <description>PSR-12 Extended Coding Standard</description>
 
     <!-- Base standards -->
-    <config name="installed_paths" value="./../../slevomat/coding-standard" />
+    <config
+            name="installed_paths"
+            value="./../../slevomat/coding-standard,./../../roslov/abstract-or-final-sniff/src"
+    />
 
     <!-- PSR-12 standard -->
     <rule ref="PSR12" />
@@ -38,6 +41,9 @@
 
     <!-- Checks the spacing after a type cast -->
     <rule ref="Generic.Formatting.SpaceAfterCast" />
+
+    <!-- Checks that non-abstract classes has `final` -->
+    <rule ref="AbstractOrFinalClassesOnly.AbstractOrFinal" />
 
     <!-- Rules from Slevomat Coding Standard -->
     <!-- Functional — improving the safety and behaviour of code -->

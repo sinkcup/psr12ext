@@ -15,8 +15,9 @@
     ],
     "require": {
         "php": ">=7.1.0",
-        "squizlabs/php_codesniffer": "^3.6",
-        "slevomat/coding-standard": "^7.0"
+        "roslov/abstract-or-final-sniff": "dev-namespace-fix",
+        "slevomat/coding-standard": "^7.0",
+        "squizlabs/php_codesniffer": "^3.6"
     },
     "support": {
         "source": "https://github.com/roslov/psr12ext"
